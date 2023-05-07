@@ -34,7 +34,7 @@ for i, arg in enumerate(sys.argv):
     team.append(pokemon)
 
 
-for i, p in enumerate(team, start=1):
+for i, p in enumerate(team):
     strengths = []
     weaknesses = []
     resulting = cursor.execute("SELECT against_bug, against_dark, against_dragon, against_electric, against_fairy, against_fight, \
